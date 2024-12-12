@@ -11,6 +11,9 @@ const Widget = () => {
           <div className="sub_heading">
             <h3>Right Evaluation & Assessment for Learning</h3>
           </div>
+          <div className="description">
+            <p>lorem ipsum dior pojerjop</p>
+          </div>
           <div className="main_btn">
             <button>Register/Login</button>
           </div>
