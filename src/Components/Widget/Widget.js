@@ -3,8 +3,8 @@ import image from "../../../image.png"
 
 const Widget = () => {
   return (
-    <div className="w-full border-2 border-black px-8 py-4 rounded-lg flex items-center justify-between gap-4 bg-blue-800">
-      <div className="left_div border-2 border-red-500 w-[75%] flex flex-col items-start justify-center gap-4">
+    <div className="w-full border-2 border-black px-8 py-4 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-2 bg-blue-800 relative">
+      <div className="left_div border-2 border-red-500 sm:w-[73%] flex flex-col items-start justify-center gap-4">
           <div className="main_heading">
             <h1 className="font-bold text-4xl text-white drop-shadow-lg">PW REAL Test Series for JEE and NEET</h1>
           </div>
@@ -21,8 +21,11 @@ const Widget = () => {
             <button className="bg-white p-2 px-4 rounded-md shadow-lg text-sm">Share with Friends</button>
         </div>
       </div>
-      <div className="right_div border-2 border-red-500 w-[25%]">
-        <img src={image}/>
+      <div className="right_div border-2 border-red-500 w-full sm:w-[25%] sm:absolute sm:bottom-0 right-[2.5%] sm:h-full h-64 flex items-center justify-center">
+        {/* default nature bottom 0 */}
+        {/* <img src={image} className="bottom-0 absolute"/> */}
+        {/* functionaly center */}
+        <img src={image} className="object-contain object-center"/>
       </div>
     </div>
   );
